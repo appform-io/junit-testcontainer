@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.phonepe.testcontainer</groupId>
+    <artifactId>phonepe-testcontainer</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>8</source>
+                    <target>8</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+    <modules>
+        <module>testcontainer-aerospike</module>
+        <module>testcontainer-commons</module>
+        <module>testcontainer-demo</module>
+    </modules>
+
+    <repositories>
+        <repository>
+            <id>phonepe-snapshots</id>
+            <url>http://artifactory.phonepe.com/content/groups/public</url>
+        </repository>
+        <repository>
+            <id>clojars</id>
+            <name>Clojars repository</name>
+            <url>https://clojars.org/repo</url>
+        </repository>
+    </repositories>
+
+    <properties>
+        <testcontainers.version>1.9.1</testcontainers.version>
+        <lombok.version>1.16.16</lombok.version>
+        <slf4j.version>1.7.21</slf4j.version>
+        <aerospike.version>4.4.2</aerospike.version>
+        <dropwizard.guicey.version>4.2.1</dropwizard.guicey.version>
+    </properties>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.testcontainers</groupId>
+                <artifactId>testcontainers</artifactId>
+                <version>${testcontainers.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>ru.vyarus</groupId>
+                <artifactId>dropwizard-guicey</artifactId>
+                <version>${dropwizard.guicey.version}</version>
+            </dependency>
+
+            <!-- Annotation Based Tools -->
+
+            <dependency>
+                <groupId>org.projectlombok</groupId>
+                <artifactId>lombok</artifactId>
+                <version>${lombok.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.slf4j</groupId>
+                <artifactId>slf4j-api</artifactId>
+                <version>${slf4j.version}</version>
+            </dependency>
+
+            <!-- Aerospike -->
+
+            <dependency>
+                <groupId>com.aerospike</groupId>
+                <artifactId>aerospike-client</artifactId>
+                <version>${aerospike.version}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+</project>

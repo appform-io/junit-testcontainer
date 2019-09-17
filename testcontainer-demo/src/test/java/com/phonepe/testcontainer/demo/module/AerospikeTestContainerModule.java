@@ -7,11 +7,11 @@ import com.github.dockerjava.api.model.Capability;
 import com.google.inject.AbstractModule;
 import com.google.inject.Provides;
 import com.google.inject.Singleton;
-import com.phonepe.testcontainer.aerospike.config.AerospikeConfiguration;
-import com.phonepe.testcontainer.aerospike.config.AerospikeHost;
-import com.phonepe.testcontainer.aerospike.config.AppConfiguration;
-import com.phonepe.testcontainer.container.AerospikeContainerConfiguration;
-import com.phonepe.testcontainer.container.AerospikeWaitStrategy;
+import com.phonepe.testcontainer.aerospike.AerospikeContainerConfiguration;
+import com.phonepe.testcontainer.aerospike.AerospikeWaitStrategy;
+import com.phonepe.testcontainer.demo.config.AerospikeConfiguration;
+import com.phonepe.testcontainer.demo.config.AerospikeHost;
+import com.phonepe.testcontainer.demo.config.DemoAppConfiguration;
 import lombok.extern.slf4j.Slf4j;
 import org.testcontainers.containers.GenericContainer;
 import org.testcontainers.containers.wait.strategy.HostPortWaitStrategy;
@@ -22,9 +22,9 @@ import java.time.Duration;
 import java.util.Collections;
 import java.util.List;
 
-import static com.phonepe.testcontainer.container.common.ContainerUtils.containerLogsConsumer;
-import static com.phonepe.testcontainer.aerospike.config.utils.AerospikeUtils.clientPolicy;
-import static com.phonepe.testcontainer.aerospike.config.utils.AerospikeUtils.hosts;
+import static com.phonepe.testcontainer.commons.ContainerUtils.containerLogsConsumer;
+import static com.phonepe.testcontainer.demo.utils.AerospikeUtils.clientPolicy;
+import static com.phonepe.testcontainer.demo.utils.AerospikeUtils.hosts;
 import static java.time.temporal.ChronoUnit.SECONDS;
 
 @Slf4j
@@ -80,7 +80,7 @@ public class AerospikeTestContainerModule extends AbstractModule {
     @Provides
     public AerospikeClient provideAerospikeClient(final GenericContainer aerospikeContainer,
                                                   final AerospikeContainerConfiguration aerospikeContainerConfig,
-                                                  final AppConfiguration config) {
+                                                  final DemoAppConfiguration config) {
         Integer mappedPort = aerospikeContainer.getMappedPort(aerospikeContainerConfig.getPort());
         String host = aerospikeContainer.getContainerIpAddress();
         AerospikeConfiguration aerospikeConfig = config.getAerospikeConfiguration();

@@ -1,0 +1,11 @@
+# Idea Files #
+.idea/**
+target/*
+testcontainer-aerospike/target/*
+testcontainer-demo/target/*
+testcontainer-commons/target/*
+*.ipr
+*.iws
+*.iml
+.DS_Store
+hermes-core/.DS_Store

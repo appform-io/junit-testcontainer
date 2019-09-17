@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cc4750a3-2cad-455c-ba9a-8c6eff30c864" name="Default" comment="" />
+    <list default="true" id="cc4750a3-2cad-455c-ba9a-8c6eff30c864" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testcontainer-demo/src/main/java/com/phonepe/testcontainer/demo/TestContainerDemoApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/testcontainer-demo/src/main/java/com/phonepe/testcontainer/demo/TestContainerDemoApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testcontainer-demo/src/main/java/com/phonepe/testcontainer/demo/config/AppConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/testcontainer-demo/src/main/java/com/phonepe/testcontainer/demo/config/DemoAppConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testcontainer-demo/src/main/java/com/phonepe/testcontainer/demo/module/AerospikeModule.java" beforeDir="false" afterPath="$PROJECT_DIR$/testcontainer-demo/src/main/java/com/phonepe/testcontainer/demo/module/AerospikeModule.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testcontainer-demo/src/test/java/com/phonepe/testcontainer/demo/TestContainerDemoTestApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/testcontainer-demo/src/test/java/com/phonepe/testcontainer/demo/TestContainerDemoTestApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testcontainer-demo/src/test/java/com/phonepe/testcontainer/demo/module/AerospikeTestContainerModule.java" beforeDir="false" afterPath="$PROJECT_DIR$/testcontainer-demo/src/test/java/com/phonepe/testcontainer/demo/module/AerospikeTestContainerModule.java" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/testcontainer-aerospike/target/" />
@@ -28,18 +36,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TestContainerDemoTestApplication.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/testcontainer-demo/src/test/java/com/phonepe/testcontainer/demo/TestContainerDemoTestApplication.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="53" column="11" selection-start-line="53" selection-start-column="11" selection-end-line="53" selection-end-column="11" />
-              <folding>
-                <element signature="e#1091#1109#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/testcontainer-demo/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
@@ -49,33 +45,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/testcontainer-commons/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="19" selection-start-line="16" selection-end-line="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TestContainerDemoApplication.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/testcontainer-demo/src/main/java/com/phonepe/testcontainer/demo/TestContainerDemoApplication.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="795">
-              <caret line="53" column="11" selection-start-line="53" selection-start-column="11" selection-end-line="53" selection-end-column="11" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#835#853#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="AerospikeUtils.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/testcontainer-demo/src/main/java/com/phonepe/testcontainer/demo/utils/AerospikeUtils.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="720">
-              <caret line="50" column="43" selection-start-line="50" selection-start-column="43" selection-end-line="50" selection-end-column="43" />
+            <state relative-caret-position="225">
+              <caret line="17" column="31" selection-start-line="17" selection-start-column="31" selection-end-line="17" selection-end-column="31" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -95,11 +69,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AerospikeWaitStrategy.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="AerospikeWaitStrategy.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/testcontainer-aerospike/src/main/java/com/phonepe/testcontainer/aerospike/AerospikeWaitStrategy.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="79">
-              <caret line="40" column="52" selection-start-line="40" selection-start-column="52" selection-end-line="40" selection-end-column="52" />
+            <state relative-caret-position="304">
+              <caret line="55" column="9" selection-start-line="55" selection-start-column="9" selection-end-line="55" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -107,11 +81,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AerospikeHost.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/testcontainer-demo/src/main/java/com/phonepe/testcontainer/demo/config/AerospikeHost.java">
+      <file leaf-file-name="AerospikeTestContainerModule.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/testcontainer-demo/src/test/java/com/phonepe/testcontainer/demo/module/AerospikeTestContainerModule.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+            <state relative-caret-position="610">
+              <caret line="88" column="42" selection-start-line="88" selection-start-column="42" selection-end-line="88" selection-end-column="42" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -122,11 +96,44 @@
       <file leaf-file-name="AerospikeConfiguration.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/testcontainer-demo/src/main/java/com/phonepe/testcontainer/demo/config/AerospikeConfiguration.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="167">
-              <caret line="19" column="30" selection-start-line="19" selection-start-column="30" selection-end-line="19" selection-end-column="30" />
+            <state relative-caret-position="285">
+              <caret line="19" column="41" lean-forward="true" selection-start-line="19" selection-start-column="41" selection-end-line="19" selection-end-column="41" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DemoAppConfiguration.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/testcontainer-demo/src/main/java/com/phonepe/testcontainer/demo/config/DemoAppConfiguration.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="195">
+              <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TestContainerDemoApplication.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/testcontainer-demo/src/main/java/com/phonepe/testcontainer/demo/TestContainerDemoApplication.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="795">
+              <caret line="53" column="11" selection-start-line="53" selection-start-column="11" selection-end-line="53" selection-end-column="11" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="45">
+              <caret line="3" column="23" lean-forward="true" selection-start-line="3" selection-start-column="23" selection-end-line="3" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -151,6 +158,9 @@
     <dirStrings>
       <dir>$PROJECT_DIR$/src/test/java/com/phonepe/testcontainer</dir>
     </dirStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GradleLocalSettings">
     <option name="projectSyncType">
@@ -196,6 +206,8 @@
         <option value="$PROJECT_DIR$/testcontainer-demo/pom.xml" />
         <option value="$PROJECT_DIR$/testcontainer-demo/src/main/java/com/phonepe/testcontainer/demo/module/AerospikeModule.java" />
         <option value="$PROJECT_DIR$/testcontainer-demo/src/main/java/com/phonepe/testcontainer/demo/utils/AerospikeUtils.java" />
+        <option value="$PROJECT_DIR$/testcontainer-demo/src/test/java/com/phonepe/testcontainer/demo/module/AerospikeTestContainerModule.java" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -203,8 +215,9 @@
     <option name="width" value="1440" />
     <option name="height" value="900" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
-    <navigator currentView="PackagesPane" proportions="" version="1">
+    <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
@@ -233,6 +246,17 @@
               <item name="phonepe-testcontainers" type="58d84e3e:PackageViewProjectNode" />
               <item name="testcontainer-demo" type="616d4139:PackageViewModuleNode" />
             </path>
+            <path>
+              <item name="phonepe-testcontainers" type="58d84e3e:PackageViewProjectNode" />
+              <item name="testcontainer-demo" type="616d4139:PackageViewModuleNode" />
+              <item name="com.phonepe.testcontainer.demo" type="1f31426a:PackageElementNode" />
+            </path>
+            <path>
+              <item name="phonepe-testcontainers" type="58d84e3e:PackageViewProjectNode" />
+              <item name="testcontainer-demo" type="616d4139:PackageViewModuleNode" />
+              <item name="com.phonepe.testcontainer.demo" type="1f31426a:PackageElementNode" />
+              <item name="config" type="1f31426a:PackageElementNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -258,7 +282,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="SearchEverywhereHistoryKey" value="pom&#9;FILE&#9;file:///Users/jitendra.dhawan/PhonePe/DataPlatform/phonepe-testcontainers/pom.xml&#10;po&#9;FILE&#9;file:///Users/jitendra.dhawan/PhonePe/DataPlatform/phonepe-testcontainers/testcontainer-commons/pom.xml" />
+    <property name="SearchEverywhereHistoryKey" value="AerospikeTe&#9;FILE&#9;file:///Users/jitendra.dhawan/PhonePe/DataPlatform/phonepe-testcontainers/testcontainer-demo/src/test/java/com/phonepe/testcontainer/demo/module/AerospikeTestContainerModule.java&#10;pom&#9;FILE&#9;file:///Users/jitendra.dhawan/PhonePe/DataPlatform/phonepe-testcontainers/pom.xml&#10;po&#9;FILE&#9;file:///Users/jitendra.dhawan/PhonePe/DataPlatform/phonepe-testcontainers/testcontainer-commons/pom.xml" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -349,6 +373,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="PlantUML" />
       <window_info anchor="right" id="Palette" />
@@ -371,9 +396,9 @@
       <window_info id="Image Layers" />
       <window_info anchor="right" id="Capture Analysis" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" visible="true" weight="0.088484846" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.39341918" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info active="true" anchor="bottom" id="Terminal" visible="true" weight="0.2509091" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.39341918" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32969698" />
       <window_info anchor="right" id="Theme Preview" />
       <window_info id="Favorites" side_tool="true" />
@@ -419,13 +444,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="17" column="22" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/testcontainer-demo/src/test/java/com/phonepe/testcontainer/demo/module/AerospikeTestContainerModule.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-305">
-          <caret line="27" column="34" lean-forward="true" selection-start-line="27" selection-start-column="34" selection-end-line="27" selection-end-column="34" />
         </state>
       </provider>
     </entry>
@@ -524,33 +542,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/testcontainer-demo/src/main/java/com/phonepe/testcontainer/demo/config/AppConfiguration.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/testcontainer-demo/src/main/java/com/phonepe/testcontainer/demo/config/AerospikeHost.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
           <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/testcontainer-demo/src/main/java/com/phonepe/testcontainer/demo/TestContainerDemoApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="795">
-          <caret line="53" column="11" selection-start-line="53" selection-start-column="11" selection-end-line="53" selection-end-column="11" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#835#853#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -579,30 +576,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/testcontainer-demo/src/main/java/com/phonepe/testcontainer/demo/config/AerospikeConfiguration.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="167">
-          <caret line="19" column="30" selection-start-line="19" selection-start-column="30" selection-end-line="19" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/testcontainer-demo/src/main/java/com/phonepe/testcontainer/demo/module/AerospikeModule.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="353">
           <caret line="35" column="40" selection-start-line="35" selection-start-column="40" selection-end-line="35" selection-end-column="40" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/testcontainer-demo/src/main/java/com/phonepe/testcontainer/demo/utils/AerospikeUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="720">
-          <caret line="50" column="43" selection-start-line="50" selection-start-column="43" selection-end-line="50" selection-end-column="43" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -621,11 +598,68 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/testcontainer-aerospike/src/main/java/com/phonepe/testcontainer/aerospike/AerospikeWaitStrategy.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="79">
-          <caret line="40" column="52" selection-start-line="40" selection-start-column="52" selection-end-line="40" selection-end-column="52" />
+        <state relative-caret-position="304">
+          <caret line="55" column="9" selection-start-line="55" selection-start-column="9" selection-end-line="55" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testcontainer-demo/src/main/java/com/phonepe/testcontainer/demo/utils/AerospikeUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="17" column="31" selection-start-line="17" selection-start-column="31" selection-end-line="17" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testcontainer-demo/src/test/java/com/phonepe/testcontainer/demo/module/AerospikeTestContainerModule.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="610">
+          <caret line="88" column="42" selection-start-line="88" selection-start-column="42" selection-end-line="88" selection-end-column="42" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testcontainer-demo/src/main/java/com/phonepe/testcontainer/demo/config/AerospikeConfiguration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="41" lean-forward="true" selection-start-line="19" selection-start-column="41" selection-end-line="19" selection-end-column="41" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testcontainer-demo/src/main/java/com/phonepe/testcontainer/demo/config/DemoAppConfiguration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testcontainer-demo/src/main/java/com/phonepe/testcontainer/demo/TestContainerDemoApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="795">
+          <caret line="53" column="11" selection-start-line="53" selection-start-column="11" selection-end-line="53" selection-end-column="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="23" lean-forward="true" selection-start-line="3" selection-start-column="23" selection-end-line="3" selection-end-column="23" />
         </state>
       </provider>
     </entry>

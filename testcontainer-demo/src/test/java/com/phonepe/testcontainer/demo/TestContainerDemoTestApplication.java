@@ -4,7 +4,7 @@ import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.MapperFeature;
 import com.google.inject.Stage;
 import com.phonepe.testcontainer.commons.ApplicationContext;
-import com.phonepe.testcontainer.demo.config.AppConfiguration;
+import com.phonepe.testcontainer.demo.config.DemoAppConfiguration;
 import com.phonepe.testcontainer.demo.module.AerospikeTestContainerModule;
 import com.phonepe.testcontainer.demo.utils.SerDe;
 import io.dropwizard.setup.Bootstrap;
@@ -15,16 +15,16 @@ import ru.vyarus.dropwizard.guice.GuiceBundle;
 @Slf4j
 public class TestContainerDemoTestApplication extends TestContainerDemoApplication {
 
-    private GuiceBundle<AppConfiguration> guiceBundle;
+    private GuiceBundle<DemoAppConfiguration> guiceBundle;
 
     public static void main(String[] args) throws Exception {
         new TestContainerDemoTestApplication().run(args);
     }
 
     @Override
-    public void initialize(Bootstrap<AppConfiguration> bootstrap) {
+    public void initialize(Bootstrap<DemoAppConfiguration> bootstrap) {
 
-        this.guiceBundle = GuiceBundle.<AppConfiguration>builder()
+        this.guiceBundle = GuiceBundle.<DemoAppConfiguration>builder()
                 .modules(new AerospikeTestContainerModule())
                 .enableAutoConfig(getClass().getPackage().getName())
                 .build(Stage.PRODUCTION);
@@ -34,7 +34,7 @@ public class TestContainerDemoTestApplication extends TestContainerDemoApplicati
 
 
     @Override
-    public void run(AppConfiguration hermesConfiguration, Environment environment) {
+    public void run(DemoAppConfiguration hermesConfiguration, Environment environment) {
         initializeSerDeserializer(environment);
         // set guice injector in application context
         ApplicationContext.setAlreadyCreatedInjector(this.guiceBundle.getInjector());

@@ -11,7 +11,7 @@ import lombok.EqualsAndHashCode;
 @Data
 @JsonIgnoreProperties(ignoreUnknown = true)
 @EqualsAndHashCode(callSuper = true)
-public class AppConfiguration extends Configuration {
+public class DemoAppConfiguration extends Configuration {
     private AerospikeConfiguration aerospikeConfiguration;
 
 }

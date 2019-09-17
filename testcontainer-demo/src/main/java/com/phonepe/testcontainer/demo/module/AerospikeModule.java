@@ -8,7 +8,7 @@ import com.google.inject.AbstractModule;
 import com.google.inject.Provides;
 import com.google.inject.Singleton;
 import com.phonepe.testcontainer.demo.config.AerospikeConfiguration;
-import com.phonepe.testcontainer.demo.config.AppConfiguration;
+import com.phonepe.testcontainer.demo.config.DemoAppConfiguration;
 
 import java.util.List;
 
@@ -25,13 +25,13 @@ public class AerospikeModule extends AbstractModule {
 
     @Singleton
     @Provides
-    public AerospikeConfiguration provideAerospikeConfig(final AppConfiguration config) {
+    public AerospikeConfiguration provideAerospikeConfig(final DemoAppConfiguration config) {
         return config.getAerospikeConfiguration();
     }
 
     @Singleton
     @Provides
-    public AerospikeClient provideAerospikeClient(final AppConfiguration config) {
+    public AerospikeClient provideAerospikeClient(final DemoAppConfiguration config) {
         AerospikeConfiguration aerospikeConfig = config.getAerospikeConfiguration();
         List<Host> aerospikeHosts = hosts(aerospikeConfig.getConnection());
         ClientPolicy clientPolicy = clientPolicy(aerospikeConfig);

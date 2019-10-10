@@ -1,3 +1,5 @@
+package com.phonepe.testcontainer.elasticsearch.config;
+
 /*
  * The MIT License (MIT)
  *
@@ -21,16 +23,25 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  */
-package com.phonepe.testcontainer.commons;
 
-import lombok.Data;
+import com.phonepe.testcontainer.commons.CommonContainerConfiguration;
+import lombok.*;
 
-import java.util.HashSet;
-import java.util.Set;
+import java.util.ArrayList;
+import java.util.List;
 
 @Data
-public class InstallPackageProperties {
+@NoArgsConstructor
+@AllArgsConstructor
+@EqualsAndHashCode(callSuper = true)
+public class ElasticsearchContainerConfiguration extends CommonContainerConfiguration {
+    public static final String BEAN_NAME_EMBEDDED_ELASTIC_SEARCH = "embeddedElasticSearch";
 
-    boolean enabled = true;
-    Set<String> packages = new HashSet<>();
+    private String dockerImage = "docker.elastic.co/elasticsearch/elasticsearch:6.3.0";
+    private String clusterName = "test_cluster";
+    private String host = "localhost";
+    private List<String> indices = new ArrayList<>();
+    private int httpPort = 9200;
+    private int transportPort = 9300;
+    private int clusterRamMb = 256;
 }

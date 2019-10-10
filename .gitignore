@@ -1,9 +1,15 @@
 # Idea Files #
 .idea/**
 target/*
+.idea/*
+.idea/workspace.xml
+.idea/vcs.xml
+.idea/compiler.xml
+.idea/codeStyles/Project.xml
 testcontainer-aerospike/target/*
 testcontainer-demo/target/*
 testcontainer-commons/target/*
+testcontainer-elasticsearch/target/*
 *.ipr
 *.iws
 *.iml

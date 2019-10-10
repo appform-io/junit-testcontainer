@@ -1,3 +1,5 @@
+package com.phonepe.testcontainer.elasticsearch;
+
 /*
  * The MIT License (MIT)
  *
@@ -21,16 +23,21 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  */
-package com.phonepe.testcontainer.commons;
+import com.phonepe.testcontainer.commons.AbstractInitOnStartupStrategy;
+import com.phonepe.testcontainer.elasticsearch.config.ElasticsearchContainerConfiguration;
+import lombok.RequiredArgsConstructor;
 
-import lombok.Data;
+@RequiredArgsConstructor
+public class CreateIndex extends AbstractInitOnStartupStrategy {
 
-import java.util.HashSet;
-import java.util.Set;
+    private final ElasticsearchContainerConfiguration configuration;
+    private final String index;
 
-@Data
-public class InstallPackageProperties {
-
-    boolean enabled = true;
-    Set<String> packages = new HashSet<>();
+    @Override
+    public String[] getScriptToExecute() {
+        return new String[]{
+                "curl", "-X", "PUT",
+                "http://127.0.0.1:" + configuration.getHttpPort() + "/" + index
+        };
+    }
 }

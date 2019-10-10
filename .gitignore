@@ -14,4 +14,3 @@ testcontainer-elasticsearch/target/*
 *.iws
 *.iml
 .DS_Store
-.idea/workspace.xml

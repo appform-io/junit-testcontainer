@@ -1,5 +1,4 @@
 # Idea Files #
-.idea/**
 target/*
 .idea/*
 .idea/workspace.xml
@@ -10,7 +9,10 @@ testcontainer-aerospike/target/*
 testcontainer-demo/target/*
 testcontainer-commons/target/*
 testcontainer-elasticsearch/target/*
+testcontainer-rabbitmq/target/*
 *.ipr
 *.iws
 *.iml
 .DS_Store
+.idea/compiler.xml
+.idea/workspace.xml

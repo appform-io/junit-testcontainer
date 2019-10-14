@@ -12,6 +12,7 @@
     <modules>
         <module>testcontainer-aerospike</module>
         <module>testcontainer-elasticsearch</module>
+        <module>testcontainer-rabbitmq</module>
         <module>testcontainer-commons</module>
         <module>testcontainer-demo</module>
     </modules>

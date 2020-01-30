@@ -6,7 +6,7 @@
 
     <groupId>com.phonepe.testcontainer</groupId>
     <artifactId>phonepe-testcontainer</artifactId>
-    <version>1.0.3</version>
+    <version>1.0.4</version>
     <packaging>pom</packaging>
 
     <modules>
@@ -20,27 +20,11 @@
 
     <distributionManagement>
         <repository>
-            <id>phonepe-releases</id>
-            <url>http://artifactory.phonepe.com/content/repositories/releases</url>
-        </repository>
-        <snapshotRepository>
-            <id>phonepe-snapshots</id>
-            <url>http://artifactory.phonepe.com/content/repositories/snapshots</url>
-        </snapshotRepository>
-    </distributionManagement>
-
-
-    <repositories>
-        <repository>
-            <id>phonepe-snapshots</id>
-            <url>http://artifactory.phonepe.com/content/groups/public</url>
-        </repository>
-        <repository>
             <id>clojars</id>
             <name>Clojars repository</name>
             <url>https://clojars.org/repo</url>
         </repository>
-    </repositories>
+    </distributionManagement>
 
     <properties>
         <testcontainers.version>1.9.1</testcontainers.version>

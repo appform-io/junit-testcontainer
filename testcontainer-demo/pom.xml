@@ -7,23 +7,23 @@
     <parent>
         <groupId>com.phonepe.testcontainer</groupId>
         <artifactId>phonepe-testcontainer</artifactId>
-        <version>1.0.3</version>
+        <version>1.0.4</version>
     </parent>
 
     <artifactId>testcontainer-demo</artifactId>
-    <version>1.0.3</version>
+    <version>1.0.4</version>
     <packaging>jar</packaging>
 
     <dependencies>
         <dependency>
             <groupId>com.phonepe.testcontainer</groupId>
             <artifactId>testcontainer-commons</artifactId>
-            <version>1.0.3</version>
+            <version>1.0.4</version>
         </dependency>
         <dependency>
             <groupId>com.phonepe.testcontainer</groupId>
             <artifactId>testcontainer-aerospike</artifactId>
-            <version>1.0.3</version>
+            <version>1.0.4</version>
         </dependency>
     </dependencies>
 </project>

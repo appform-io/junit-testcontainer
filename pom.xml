@@ -32,15 +32,6 @@
     </distributionManagement>
 
 
-
-    <repositories>
-        <repository>
-            <id>clojars</id>
-            <name>Clojars repository</name>
-            <url>https://clojars.org/repo</url>
-        </repository>
-    </repositories>
-
     <properties>
         <testcontainers.version>1.9.1</testcontainers.version>
         <lombok.version>1.16.16</lombok.version>

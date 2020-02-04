@@ -7,8 +7,10 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="testcontainer-aerospike" />
-        <module name="testcontainer-commons" />
         <module name="testcontainer-demo" />
+        <module name="testcontainer-commons" />
+        <module name="testcontainer-elasticsearch" />
+        <module name="testcontainer-rabbitmq" />
       </profile>
     </annotationProcessing>
   </component>

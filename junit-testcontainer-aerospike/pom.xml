@@ -17,7 +17,7 @@
     <dependencies>
         <dependency>
             <groupId>io.appform.testcontainer</groupId>
-            <artifactId>testcontainer-commons</artifactId>
+            <artifactId>junit-testcontainer-commons</artifactId>
             <version>1.0.4</version>
         </dependency>
 

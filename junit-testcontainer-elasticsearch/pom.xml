@@ -6,18 +6,18 @@
 
 
     <parent>
-        <groupId>com.phonepe.testcontainer</groupId>
-        <artifactId>phonepe-testcontainer</artifactId>
+        <groupId>io.appform.testcontainer</groupId>
+        <artifactId>junit-testcontainer</artifactId>
         <version>1.0.4</version>
     </parent>
 
-    <artifactId>testcontainer-elasticsearch</artifactId>
+    <artifactId>junit-testcontainer-elasticsearch</artifactId>
     <version>1.0.4</version>
     <packaging>jar</packaging>
 
     <dependencies>
         <dependency>
-            <groupId>com.phonepe.testcontainer</groupId>
+            <groupId>io.appform.testcontainer</groupId>
             <artifactId>testcontainer-commons</artifactId>
             <version>1.0.4</version>
         </dependency>

@@ -5,11 +5,11 @@ target/*
 .idea/vcs.xml
 .idea/compiler.xml
 .idea/codeStyles/Project.xml
-testcontainer-aerospike/target/*
-testcontainer-demo/target/*
-testcontainer-commons/target/*
-testcontainer-elasticsearch/target/*
-testcontainer-rabbitmq/target/*
+junit-testcontainer-aerospike/target/*
+junit-testcontainer-demo/target/*
+junit-testcontainer-commons/target/*
+junit-testcontainer-elasticsearch/target/*
+junit-testcontainer-rabbitmq/target/*
 *.ipr
 *.iws
 *.iml

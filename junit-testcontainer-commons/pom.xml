@@ -5,22 +5,38 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <groupId>com.phonepe.testcontainer</groupId>
-        <artifactId>phonepe-testcontainer</artifactId>
+        <groupId>io.appform.testcontainer</groupId>
+        <artifactId>junit-testcontainer</artifactId>
         <version>1.0.4</version>
     </parent>
 
-    <artifactId>testcontainer-rabbitmq</artifactId>
+    <artifactId>junit-testcontainer-commons</artifactId>
     <version>1.0.4</version>
     <packaging>jar</packaging>
 
     <dependencies>
         <dependency>
-            <groupId>com.phonepe.testcontainer</groupId>
-            <artifactId>testcontainer-commons</artifactId>
-            <version>1.0.4</version>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.testcontainers</groupId>
+            <artifactId>testcontainers</artifactId>
+        </dependency>
+
+
+        <dependency>
+            <groupId>ru.vyarus</groupId>
+            <artifactId>dropwizard-guicey</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
         </dependency>
     </dependencies>
+
 
     <build>
         <plugins>

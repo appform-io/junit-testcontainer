@@ -5,19 +5,19 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <groupId>com.phonepe.testcontainer</groupId>
-        <artifactId>phonepe-testcontainer</artifactId>
+        <groupId>io.appform.testcontainer</groupId>
+        <artifactId>junit-testcontainer</artifactId>
         <version>1.0.4</version>
     </parent>
 
-    <artifactId>testcontainer-aerospike</artifactId>
+    <artifactId>junit-testcontainer-aerospike</artifactId>
     <version>1.0.4</version>
     <packaging>jar</packaging>
 
     <dependencies>
         <dependency>
-            <groupId>com.phonepe.testcontainer</groupId>
-            <artifactId>testcontainer-commons</artifactId>
+            <groupId>io.appform.testcontainer</groupId>
+            <artifactId>junit-testcontainer-commons</artifactId>
             <version>1.0.4</version>
         </dependency>
 

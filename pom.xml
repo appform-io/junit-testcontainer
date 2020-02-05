@@ -19,6 +19,50 @@
         <module>junit-testcontainer-demo</module>
     </modules>
 
+    <scm>
+        <connection>scm:git:https://github.com/appform-io/junit-testcontainer.git</connection>
+        <developerConnection>scm:git:https://github.com/appform-io/junit-testcontainer.git</developerConnection>
+        <tag>HEAD</tag>
+        <url>https://github.com/appform-io/junit-testcontainer.git</url>
+    </scm>
+
+    <licenses>
+        <license>
+            <name>MIT License</name>
+            <url>http://www.opensource.org/licenses/mit-license.php</url>
+            <distribution>repo</distribution>
+        </license>
+    </licenses>
+
+    <developers>
+        <developer>
+            <id>santanusinha</id>
+            <name>Santanu Sinha</name>
+            <email>santanu.sinha@gmail.com</email>
+            <roles>
+                <role>developer</role>
+            </roles>
+        </developer>
+        <developer>
+            <id>jitendradhawan</id>
+            <name>Jitendra Dhawan</name>
+            <email>jitendhawan.iitd@gmail.com</email>
+            <roles>
+                <role>owner</role>
+                <role>developer</role>
+            </roles>
+        </developer>
+    </developers>
+
+    <issueManagement>
+        <system>GitHub Issues</system>
+        <url>https://github.com/appform-io/junit-testcontainer/issues</url>
+    </issueManagement>
+
+    <ciManagement>
+        <system>Travis CI</system>
+        <url>https://travis-ci.org/appform-io/junit-testcontainer</url>
+    </ciManagement>
 
     <distributionManagement>
         <snapshotRepository>

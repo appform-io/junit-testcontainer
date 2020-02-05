@@ -22,7 +22,7 @@
         </dependency>
         <dependency>
             <groupId>io.appform.testcontainer</groupId>
-            <artifactId>testcontainer-aerospike</artifactId>
+            <artifactId>junit-testcontainer-aerospike</artifactId>
             <version>1.0.4</version>
         </dependency>
     </dependencies>

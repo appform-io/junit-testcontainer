@@ -7,18 +7,20 @@ Embedded testcontainers library to support JUnit tests for stateful services.
 
 ### Usage
 Include commons dependency and required datastore testcontainer dependency in your pom
+
+### Latest version : 1.0.4
 #### commons maven dependency
 ```xml
  <groupId>io.appform.testcontainer</groupId>
  <artifactId>junit-testcontainer-commons</artifactId>
- <version>1.0.4</version>
+ <version>${current.version}</version>
 ```
 
 #### aerospike container maven dependency
 ```xml
  <groupId>io.appform.testcontainer</groupId>
  <artifactId>junit-testcontainer-aerospike</artifactId>
- <version>1.0.4</version>
+ <version>${current.version}</version>
 ```
 
 #### elasticsearch container maven dependency
@@ -26,7 +28,7 @@ Include commons dependency and required datastore testcontainer dependency in yo
 ```xml
  <groupId>io.appform.testcontainer</groupId>
  <artifactId>junit-testcontainer-elasticsearch</artifactId>
- <version>1.0.4</version>
+ <version>${current.version}</version>
 ```
 
 #### rabbitmq container maven dependency
@@ -34,7 +36,7 @@ Include commons dependency and required datastore testcontainer dependency in yo
 ```xml
  <groupId>io.appform.testcontainer</groupId>
  <artifactId>junit-testcontainer-rabbitmq</artifactId>
- <version>1.0.4</version>
+ <version>${current.version}</version>
 ```
 
 #####  Source : [testcontainers spring-boot]

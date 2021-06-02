@@ -10,6 +10,7 @@ junit-testcontainer-demo/target/*
 junit-testcontainer-commons/target/*
 junit-testcontainer-elasticsearch/target/*
 junit-testcontainer-rabbitmq/target/*
+junit-testcontainer-hbase/target/*
 *.ipr
 *.iws
 *.iml
@@ -21,3 +22,6 @@ junit-testcontainer-rabbitmq/target/*
 .idea/workspace.xml
 .idea/compiler.xml
 .idea/workspace.xml
+
+.project
+.settings/

@@ -29,6 +29,7 @@ import lombok.NoArgsConstructor;
 
 import java.time.Duration;
 
+@Builder
 @Data
 @AllArgsConstructor
 @NoArgsConstructor

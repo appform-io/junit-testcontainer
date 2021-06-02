@@ -24,9 +24,9 @@
 package io.appform.testcontainers.commons;
 
 import com.github.dockerjava.api.DockerClient;
+import com.github.dockerjava.api.async.ResultCallback;
 import com.github.dockerjava.api.command.ExecCreateCmdResponse;
 import com.github.dockerjava.api.command.InspectContainerResponse;
-import com.github.dockerjava.core.command.ExecStartResultCallback;
 import lombok.Value;
 import lombok.experimental.UtilityClass;
 import org.slf4j.Logger;
@@ -94,9 +94,8 @@ public class ContainerUtils {
         String cmdStderr;
 
         try (ByteArrayOutputStream stdout = new ByteArrayOutputStream();
-             ByteArrayOutputStream stderr = new ByteArrayOutputStream();
-             ExecStartResultCallback cmdCallback = new ExecStartResultCallback(stdout, stderr)) {
-            dockerClient.execStartCmd(cmd.getId()).exec(cmdCallback).awaitCompletion();
+             ByteArrayOutputStream stderr = new ByteArrayOutputStream();) {
+            dockerClient.execStartCmd(cmd.getId()).exec(new ResultCallback.Adapter<>()).awaitCompletion();
             cmdStdout = stdout.toString(StandardCharsets.UTF_8.name());
             cmdStderr = stderr.toString(StandardCharsets.UTF_8.name());
         } catch (Exception e) {

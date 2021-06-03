@@ -7,11 +7,11 @@
     <parent>
         <groupId>io.appform.testcontainer</groupId>
         <artifactId>junit-testcontainer</artifactId>
-        <version>1.0.4</version>
+        <version>1.0.5</version>
     </parent>
 
     <artifactId>junit-testcontainer-commons</artifactId>
-    <version>1.0.4</version>
+    <version>1.0.5</version>
     <packaging>jar</packaging>
 
     <dependencies>

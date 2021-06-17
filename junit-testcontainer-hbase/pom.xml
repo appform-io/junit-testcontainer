@@ -6,7 +6,7 @@
     <parent>
         <groupId>io.appform.testcontainer</groupId>
         <artifactId>junit-testcontainer</artifactId>
-        <version>1.0.4</version>
+        <version>1.0.5</version>
     </parent>
 
     <artifactId>junit-testcontainer-hbase</artifactId>
@@ -20,7 +20,7 @@
         <dependency>
             <groupId>io.appform.testcontainer</groupId>
             <artifactId>junit-testcontainer-commons</artifactId>
-            <version>1.0.4</version>
+            <version>${project.version}</version>
         </dependency>
 
         <dependency>

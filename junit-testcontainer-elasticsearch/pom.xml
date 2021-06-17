@@ -12,14 +12,13 @@
     </parent>
 
     <artifactId>junit-testcontainer-elasticsearch</artifactId>
-    <version>1.0.5</version>
     <packaging>jar</packaging>
 
     <dependencies>
         <dependency>
             <groupId>io.appform.testcontainer</groupId>
             <artifactId>junit-testcontainer-commons</artifactId>
-            <version>1.0.5</version>
+            <version>${project.version}</version>
         </dependency>
     </dependencies>
 

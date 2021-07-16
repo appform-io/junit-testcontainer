@@ -24,6 +24,10 @@
             <artifactId>testcontainers</artifactId>
         </dependency>
 
+        <dependency>
+            <groupId>com.github.docker-java</groupId>
+            <artifactId>docker-java-core</artifactId>
+        </dependency>
 
         <dependency>
             <groupId>ru.vyarus</groupId>

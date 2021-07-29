@@ -35,11 +35,14 @@ import java.time.Duration;
 @NoArgsConstructor
 public class CommonContainerConfiguration {
 
-    @Builder.Default
-    private long waitTimeoutInSeconds = 300;
+    protected static final long DEFAULT_WAIT_TIMEOUT_IN_SECONDS = 300L;
+    protected static final boolean DEFAULT_IS_ENABLED = true;
 
     @Builder.Default
-    private boolean enabled = true;
+    private long waitTimeoutInSeconds = DEFAULT_WAIT_TIMEOUT_IN_SECONDS;
+
+    @Builder.Default
+    private boolean enabled = DEFAULT_IS_ENABLED;
 
     public Duration getTimeoutDuration() {
         return Duration.ofSeconds(waitTimeoutInSeconds);

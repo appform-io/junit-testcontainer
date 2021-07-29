@@ -19,6 +19,7 @@
         <module>junit-testcontainer-commons</module>
         <module>junit-testcontainer-demo</module>
         <module>junit-testcontainer-hbase</module>
+        <module>junit-testcontainer-mariadb</module>
     </modules>
 
     <scm>

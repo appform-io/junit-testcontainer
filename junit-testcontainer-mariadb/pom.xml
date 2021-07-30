@@ -10,7 +10,7 @@
         <version>1.0.6</version>
     </parent>
 
-    <artifactId>junit-testcontainer-aerospike</artifactId>
+    <artifactId>junit-testcontainer-mariadb</artifactId>
     <packaging>jar</packaging>
 
     <dependencies>
@@ -19,24 +19,5 @@
             <artifactId>junit-testcontainer-commons</artifactId>
             <version>${project.version}</version>
         </dependency>
-
-        <dependency>
-            <groupId>com.aerospike</groupId>
-            <artifactId>aerospike-client</artifactId>
-        </dependency>
     </dependencies>
-
-
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-deploy-plugin</artifactId>
-                <configuration>
-                    <skip>false</skip>
-                </configuration>
-            </plugin>
-        </plugins>
-    </build>
-
 </project>

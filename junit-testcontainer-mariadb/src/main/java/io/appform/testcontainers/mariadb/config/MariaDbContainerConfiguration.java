@@ -31,12 +31,13 @@ public class MariaDbContainerConfiguration extends CommonContainerConfiguration 
 
     private String rootPassword = defaultPassword;
 
-    @Builder
+    @Builder(builderMethodName = "mariadbBuilder", builderClassName = "MariaDbContainerConfigurationBuilder")
     public MariaDbContainerConfiguration(Long waitTimeoutInSeconds, Boolean enabled,
         String dockerImage, String databaseName, String userName, String userPassword,
         String rootPassword) {
         super(
-            ObjectUtils.defaultIfNull(waitTimeoutInSeconds, CommonContainerConfiguration.DEFAULT_WAIT_TIMEOUT_IN_SECONDS),
+            ObjectUtils.defaultIfNull(waitTimeoutInSeconds,
+                CommonContainerConfiguration.DEFAULT_WAIT_TIMEOUT_IN_SECONDS),
             ObjectUtils.defaultIfNull(enabled, CommonContainerConfiguration.DEFAULT_IS_ENABLED));
         this.dockerImage = ObjectUtils.defaultIfNull(dockerImage, defaultDockerImage);
         this.databaseName = ObjectUtils.defaultIfNull(databaseName, defaultDatabaseName);

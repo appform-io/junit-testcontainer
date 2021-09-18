@@ -18,7 +18,8 @@
         <module>junit-testcontainer-rabbitmq</module>
         <module>junit-testcontainer-commons</module>
         <module>junit-testcontainer-demo</module>
-        <module>junit-testcontainer-hbase</module>
+        <module>junit-testcontainer-hbase-1.x</module>
+        <module>junit-testcontainer-hbase-2.x</module>
     </modules>
 
     <scm>

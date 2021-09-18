@@ -9,7 +9,7 @@
         <version>1.0.5</version>
     </parent>
 
-    <artifactId>junit-testcontainer-hbase</artifactId>
+    <artifactId>junit-testcontainer-hbase-2.x</artifactId>
     <packaging>jar</packaging>
 
     <properties>

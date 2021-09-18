@@ -12,12 +12,10 @@ import org.testcontainers.containers.wait.strategy.WaitStrategy;
 import com.alibaba.dcm.DnsCacheManipulator;
 
 import io.appform.testcontainers.hbase.constants.TestConstants;
-import lombok.extern.slf4j.Slf4j;
 
 /**
  * @author akshay.arni
  */
-@Slf4j
 public class TestHBaseContainer {
 
     private static DockerComposeContainer<?> compose;
@@ -35,4 +33,7 @@ public class TestHBaseContainer {
         compose.start();
     }
 
+    public static void stopContainer() {
+        compose.stop();
+    }
 }

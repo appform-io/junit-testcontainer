@@ -44,7 +44,8 @@ public abstract class BaseHBaseTest {
     @AfterAll
     public void teardownClass() throws Exception {
         admin.disableTable(TableName.valueOf(TestConstants.TEST_TABLE));
-
         admin.deleteTable(TableName.valueOf(TestConstants.TEST_TABLE));
+
+        TestHBaseContainer.stopContainer();
     }
 }

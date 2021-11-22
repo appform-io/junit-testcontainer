@@ -10,7 +10,8 @@ junit-testcontainer-demo/target/*
 junit-testcontainer-commons/target/*
 junit-testcontainer-elasticsearch/target/*
 junit-testcontainer-rabbitmq/target/*
-junit-testcontainer-hbase/target/*
+junit-testcontainer-hbase-1.x/target/*
+junit-testcontainer-hbase-2.x/target/*
 *.ipr
 *.iws
 *.iml
@@ -25,3 +26,4 @@ junit-testcontainer-hbase/target/*
 
 .project
 .settings/
+.classpath

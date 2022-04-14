@@ -12,6 +12,8 @@ junit-testcontainer-elasticsearch/target/*
 junit-testcontainer-rabbitmq/target/*
 junit-testcontainer-hbase-1.x/target/*
 junit-testcontainer-hbase-2.x/target/*
+junit-testcontainer-mariadb/target/*
+junit-testcontainer-azure-blob/target/*
 *.ipr
 *.iws
 *.iml

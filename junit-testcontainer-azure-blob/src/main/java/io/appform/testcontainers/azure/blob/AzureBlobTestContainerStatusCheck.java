@@ -8,7 +8,7 @@ import com.github.dockerjava.api.command.InspectContainerResponse;
 import com.github.dockerjava.api.model.ExposedPort;
 import com.github.dockerjava.api.model.NetworkSettings;
 import com.github.dockerjava.api.model.Ports;
-import io.appform.testcontainers.azure.blob.config.AzureBlobContainerConfiguration;
+import io.appform.testcontainers.azure.blob.config.AzureBlobTestContainerConfiguration;
 import io.appform.testcontainers.commons.AbstractRetryingWaitStrategy;
 import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
@@ -18,9 +18,9 @@ import java.util.Map;
 
 @Slf4j
 @AllArgsConstructor
-public class AzureBlobContainerStatusCheck extends AbstractRetryingWaitStrategy {
+public class AzureBlobTestContainerStatusCheck extends AbstractRetryingWaitStrategy {
 
-    private final AzureBlobContainerConfiguration azureBlobContainerConfiguration;
+    private final AzureBlobTestContainerConfiguration azureBlobTestContainerConfiguration;
 
     @Override
     protected boolean isReady() {
@@ -36,13 +36,13 @@ public class AzureBlobContainerStatusCheck extends AbstractRetryingWaitStrategy 
         }
 
         int port = getMappedPort(containerInfo.getNetworkSettings(),
-                AzureBlobContainerConfiguration.DEFAULT_PORT);
+                AzureBlobTestContainerConfiguration.DEFAULT_PORT);
         String host = DockerClientFactory.instance().dockerHostIpAddress();
 
         StorageSharedKeyCredential credential = new StorageSharedKeyCredential(
-                azureBlobContainerConfiguration.getAccountName(), azureBlobContainerConfiguration.getAccountKey());
+                azureBlobTestContainerConfiguration.getAccountName(), azureBlobTestContainerConfiguration.getAccountKey());
 
-        String endpoint = String.format("http://%s:%s/%s", host, port, azureBlobContainerConfiguration.getAccountName());
+        String endpoint = String.format("http://%s:%s/%s", host, port, azureBlobTestContainerConfiguration.getAccountName());
         log.info("url:{}",endpoint);
         BlobServiceClient blobServiceClient = new BlobServiceClientBuilder()
                 .endpoint(endpoint)

@@ -7,7 +7,7 @@ import org.hibernate.validator.constraints.NotEmpty;
 @Data
 @ToString(callSuper = true)
 @EqualsAndHashCode(callSuper = true)
-public class AzureBlobContainerConfiguration extends CommonContainerConfiguration {
+public class AzureBlobTestContainerConfiguration extends CommonContainerConfiguration {
 
     public static final int DEFAULT_PORT = 10000;
 
@@ -19,13 +19,13 @@ public class AzureBlobContainerConfiguration extends CommonContainerConfiguratio
 
     private String dockerImage = "mcr.microsoft.com/azure-storage/azurite";
 
-    public AzureBlobContainerConfiguration(String accountName, String accountKey) {
+    public AzureBlobTestContainerConfiguration(String accountName, String accountKey) {
         super();
         this.accountName = accountName;
         this.accountKey = accountKey;
     }
 
-    public AzureBlobContainerConfiguration(String accountName, String accountKey, String dockerImage) {
+    public AzureBlobTestContainerConfiguration(String accountName, String accountKey, String dockerImage) {
         this(accountName, accountKey);
         this.dockerImage = dockerImage;
     }

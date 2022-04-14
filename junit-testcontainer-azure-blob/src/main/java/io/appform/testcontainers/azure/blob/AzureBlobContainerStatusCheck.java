@@ -40,9 +40,9 @@ public class AzureBlobContainerStatusCheck extends AbstractRetryingWaitStrategy 
         String host = DockerClientFactory.instance().dockerHostIpAddress();
 
         StorageSharedKeyCredential credential = new StorageSharedKeyCredential(
-                AzureBlobContainerConfiguration.DEFAULT_ACCOUNT_NAME, AzureBlobContainerConfiguration.DEFAULT_ACCOUNT_KEY);
+                azureBlobContainerConfiguration.getAccountName(), azureBlobContainerConfiguration.getAccountKey());
 
-        String endpoint = String.format("http://%s:%s/%s", host, port, AzureBlobContainerConfiguration.DEFAULT_ACCOUNT_NAME);
+        String endpoint = String.format("http://%s:%s/%s", host, port, azureBlobContainerConfiguration.getAccountName());
         log.info("url:{}",endpoint);
         BlobServiceClient blobServiceClient = new BlobServiceClientBuilder()
                 .endpoint(endpoint)

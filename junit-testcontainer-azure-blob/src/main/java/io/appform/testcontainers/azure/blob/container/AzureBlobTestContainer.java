@@ -20,8 +20,8 @@ public class AzureBlobTestContainer extends GenericContainer<AzureBlobTestContai
     public AzureBlobTestContainer(AzureBlobContainerConfiguration azureBlobContainerConfiguration) {
         super(azureBlobContainerConfiguration.getDockerImage());
 
-        this.withEnv("AZURE_BLOB_ACCOUNT_NAME", AzureBlobContainerConfiguration.DEFAULT_ACCOUNT_NAME)
-                .withEnv("AZURE_BLOB_ACCOUNT_KEY", AzureBlobContainerConfiguration.DEFAULT_ACCOUNT_KEY)
+        this.withEnv("AZURE_BLOB_ACCOUNT_NAME", azureBlobContainerConfiguration.getAccountName())
+                .withEnv("AZURE_BLOB_ACCOUNT_KEY", azureBlobContainerConfiguration.getAccountKey())
                 .withExposedPorts(AzureBlobContainerConfiguration.DEFAULT_PORT)
                 .withLogConsumer(ContainerUtils.containerLogsConsumer(log))
                 .waitingFor(new AzureBlobContainerStatusCheck(azureBlobContainerConfiguration))
@@ -33,12 +33,12 @@ public class AzureBlobTestContainer extends GenericContainer<AzureBlobTestContai
     public String getBlobStorageEmulatorEndpoint() {
         return String.format("http://%s:%s/%s", getHost(),
                 getMappedPort(AzureBlobContainerConfiguration.DEFAULT_PORT),
-                AzureBlobContainerConfiguration.DEFAULT_ACCOUNT_NAME);
+                azureBlobContainerConfiguration.getAccountName());
     }
 
     public void createContainer(String containerId) {
         StorageSharedKeyCredential credential = new StorageSharedKeyCredential(
-                AzureBlobContainerConfiguration.DEFAULT_ACCOUNT_NAME, AzureBlobContainerConfiguration.DEFAULT_ACCOUNT_KEY);
+                azureBlobContainerConfiguration.getAccountName(), azureBlobContainerConfiguration.getAccountKey());
         BlobServiceClient blobServiceClient = new BlobServiceClientBuilder()
                 .endpoint(getBlobStorageEmulatorEndpoint())
                 .credential(credential)

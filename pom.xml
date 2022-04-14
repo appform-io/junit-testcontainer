@@ -6,7 +6,7 @@
 
     <groupId>io.appform.testcontainer</groupId>
     <artifactId>junit-testcontainer</artifactId>
-    <version>1.0.7</version>
+    <version>1.0.8</version>
     <packaging>pom</packaging>
     <name>Embedded Testcontainers</name>
     <description>Embedded testcontainers for data stores</description>
@@ -83,7 +83,7 @@
 
     <properties>
         <testcontainers.version>1.15.3</testcontainers.version>
-        <lombok.version>1.18.20</lombok.version>
+        <lombok.version>1.18.22</lombok.version>
         <slf4j.version>1.7.21</slf4j.version>
         <aerospike.version>4.4.2</aerospike.version>
         <dropwizard.guicey.version>4.2.1</dropwizard.guicey.version>

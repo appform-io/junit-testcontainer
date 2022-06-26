@@ -7,7 +7,7 @@
     <parent>
         <groupId>io.appform.testcontainer</groupId>
         <artifactId>junit-testcontainer</artifactId>
-        <version>1.0.8</version>
+        <version>1.0.9</version>
     </parent>
 
     <artifactId>junit-testcontainer-commons</artifactId>
@@ -22,11 +22,6 @@
         <dependency>
             <groupId>org.testcontainers</groupId>
             <artifactId>testcontainers</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>com.github.docker-java</groupId>
-            <artifactId>docker-java-core</artifactId>
         </dependency>
 
         <dependency>

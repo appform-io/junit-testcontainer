@@ -8,7 +8,7 @@ Embedded testcontainers library to support JUnit tests for stateful services.
 ### Usage
 Include commons dependency and required datastore testcontainer dependency in your pom
 
-### Latest version : 1.0.9
+### Latest version : 1.0.10
 #### commons maven dependency
 ```xml
  <groupId>io.appform.testcontainer</groupId>
@@ -44,6 +44,14 @@ Include commons dependency and required datastore testcontainer dependency in yo
 ```xml
  <groupId>io.appform.testcontainer</groupId>
  <artifactId>junit-testcontainer-hbase</artifactId>
+ <version>${current.version}</version>
+```
+
+#### zookeeper container maven dependency
+
+```xml
+ <groupId>io.appform.testcontainer</groupId>
+ <artifactId>junit-testcontainer-zookeeper</artifactId>
  <version>${current.version}</version>
 ```
 

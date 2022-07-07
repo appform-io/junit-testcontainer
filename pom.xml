@@ -6,7 +6,7 @@
 
     <groupId>io.appform.testcontainer</groupId>
     <artifactId>junit-testcontainer</artifactId>
-    <version>1.0.9</version>
+    <version>1.0.10</version>
     <packaging>pom</packaging>
     <name>Embedded Testcontainers</name>
     <description>Embedded testcontainers for data stores</description>
@@ -22,6 +22,7 @@
         <module>junit-testcontainer-hbase-2.x</module>
         <module>junit-testcontainer-mariadb</module>
         <module>junit-testcontainer-azure-blob</module>
+        <module>junit-testcontainer-zookeeper</module>
     </modules>
 
     <scm>

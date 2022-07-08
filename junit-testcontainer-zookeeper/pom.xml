@@ -4,14 +4,13 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-
     <parent>
         <groupId>io.appform.testcontainer</groupId>
         <artifactId>junit-testcontainer</artifactId>
         <version>1.0.10</version>
     </parent>
 
-    <artifactId>junit-testcontainer-elasticsearch</artifactId>
+    <artifactId>junit-testcontainer-zookeeper</artifactId>
     <packaging>jar</packaging>
 
     <dependencies>

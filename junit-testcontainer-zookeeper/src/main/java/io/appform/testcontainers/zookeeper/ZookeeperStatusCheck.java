@@ -24,21 +24,32 @@ package io.appform.testcontainers.zookeeper;
  * SOFTWARE.
  */
 
-import io.appform.testcontainers.commons.AbstractCommandWaitStrategy;
+import io.appform.testcontainers.commons.AbstractRetryingWaitStrategy;
 import io.appform.testcontainers.zookeeper.config.ZookeeperContainerConfiguration;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 
+import java.io.IOException;
+import java.net.Socket;
+
 @Slf4j
 @RequiredArgsConstructor
-public class ZookeeperStatusCheck extends AbstractCommandWaitStrategy {
+public class ZookeeperStatusCheck extends AbstractRetryingWaitStrategy {
 
-    private final ZookeeperContainerConfiguration containerConfiguration;
+  private final ZookeeperContainerConfiguration containerConfiguration;
 
-    @Override
-    public String[] getCheckCommand() {
-        return new String[]{
-                "telnet", "localhost ", String.valueOf(containerConfiguration.getPort())
-        };
+  @Override
+  protected boolean isReady() {
+    try (Socket s = new Socket(waitStrategyTarget.getHost(), containerConfiguration.getPort())) {
+      if(log.isDebugEnabled()) {
+        log.debug("Zookeeper started on host: {}, port: {}", s.getInetAddress().getHostAddress(), s.getPort());
+      }
+      return true;
+    } catch (IOException e) {
+      if(log.isDebugEnabled()) {
+        log.debug("Zookeeper yet to start started on port: {}", containerConfiguration.getPort());
+      }
+      return false;
     }
+  }
 }

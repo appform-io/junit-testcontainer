@@ -40,7 +40,7 @@ public class ZookeeperStatusCheck extends AbstractRetryingWaitStrategy {
 
   @Override
   protected boolean isReady() {
-    try (Socket s = new Socket(waitStrategyTarget.getHost(), containerConfiguration.getPort())) {
+    try (Socket s = new Socket(waitStrategyTarget.getHost(), waitStrategyTarget.getMappedPort(containerConfiguration.getPort()))) {
       if(log.isDebugEnabled()) {
         log.debug("Zookeeper started on host: {}, port: {}", s.getInetAddress().getHostAddress(), s.getPort());
       }

@@ -15,7 +15,7 @@ import ru.vyarus.dropwizard.guice.GuiceBundle;
 @Slf4j
 public class TestContainerDemoTestApplication extends TestContainerDemoApplication {
 
-    private GuiceBundle<DemoAppConfiguration> guiceBundle;
+    private GuiceBundle guiceBundle;
 
     public static void main(String[] args) throws Exception {
         new TestContainerDemoTestApplication().run(args);
@@ -24,7 +24,7 @@ public class TestContainerDemoTestApplication extends TestContainerDemoApplicati
     @Override
     public void initialize(Bootstrap<DemoAppConfiguration> bootstrap) {
 
-        this.guiceBundle = GuiceBundle.<DemoAppConfiguration>builder()
+        this.guiceBundle = GuiceBundle.builder()
                 .modules(new AerospikeTestContainerModule())
                 .enableAutoConfig(getClass().getPackage().getName())
                 .build(Stage.PRODUCTION);

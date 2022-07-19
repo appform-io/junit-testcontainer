@@ -17,16 +17,16 @@ public class ApplicationContext {
     public static final ApplicationContext APPLICATION_CONTEXT = new ApplicationContext();
 
     private static Map<Class<?>, Object> classMapping = new HashMap<>();
-    private static List<AbstractModule> hermesModules = new ArrayList<>();
+    private static List<AbstractModule> modules = new ArrayList<>();
     private static Injector injector;
 
     public static void registerModule(AbstractModule module) {
-        hermesModules.add(module);
+        modules.add(module);
     }
 
     public static void setup(AbstractModule... modules) {
-        hermesModules.addAll(Arrays.asList(modules));
-        injector = Guice.createInjector(hermesModules);
+        ApplicationContext.modules.addAll(Arrays.asList(modules));
+        injector = Guice.createInjector(ApplicationContext.modules);
     }
 
     public static void setAlreadyCreatedInjector(Injector injector) {
@@ -34,7 +34,7 @@ public class ApplicationContext {
     }
 
     public static void reset() {
-        hermesModules.clear();
+        modules.clear();
         injector = null;
         classMapping.clear();
     }

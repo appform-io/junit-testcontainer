@@ -32,7 +32,7 @@ import lombok.EqualsAndHashCode;
 @EqualsAndHashCode(callSuper = true)
 public class ZookeeperContainerConfiguration extends CommonContainerConfiguration {
 
-    public static final String BEAN_NAME_EMBEDDED_RABBITMQ = "embeddedZookeeper";
+    public static final String BEAN_NAME_EMBEDDED_ZOOKEEPER = "embeddedZookeeper";
     private String dockerImage = "zookeeper:3.4.14";
     private int id = 1;
     private int port = 2181;

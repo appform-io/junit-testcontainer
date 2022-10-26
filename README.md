@@ -8,7 +8,7 @@ Embedded testcontainers library to support JUnit tests for stateful services.
 ### Usage
 Include commons dependency and required datastore testcontainer dependency in your pom
 
-### Latest version : 1.0.12
+### Latest version : 1.0.14
 #### commons maven dependency
 ```xml
  <groupId>io.appform.testcontainer</groupId>

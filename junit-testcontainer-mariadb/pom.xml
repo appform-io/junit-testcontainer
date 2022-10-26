@@ -7,7 +7,7 @@
     <parent>
         <groupId>io.appform.testcontainer</groupId>
         <artifactId>junit-testcontainer</artifactId>
-        <version>1.0.13</version>
+        <version>1.0.14</version>
     </parent>
 
     <artifactId>junit-testcontainer-mariadb</artifactId>

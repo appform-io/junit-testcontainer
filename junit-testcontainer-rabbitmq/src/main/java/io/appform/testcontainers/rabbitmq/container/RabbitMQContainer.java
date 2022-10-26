@@ -24,11 +24,10 @@ public class RabbitMQContainer extends GenericContainer<RabbitMQContainer> {
         this.withEnv("RABBITMQ_DEFAULT_VHOST", rabbitMQContainerConfiguration.getVhost())
             .withEnv("RABBITMQ_DEFAULT_USER", rabbitMQContainerConfiguration.getUser())
             .withEnv("RABBITMQ_DEFAULT_PASS", rabbitMQContainerConfiguration.getPassword())
-            .withExposedPorts(rabbitMQContainerConfiguration.getPort())
+            .withExposedPorts(rabbitMQContainerConfiguration.getPort(), rabbitMQContainerConfiguration.getManagementPort())
             .withLogConsumer(ContainerUtils.containerLogsConsumer(log))
             .waitingFor(new RabbitMQStatusCheck(rabbitMQContainerConfiguration))
             .withStartupTimeout(rabbitMQContainerConfiguration.getTimeoutDuration());
-
         this.rabbitMQContainerConfiguration = rabbitMQContainerConfiguration;
     }
 

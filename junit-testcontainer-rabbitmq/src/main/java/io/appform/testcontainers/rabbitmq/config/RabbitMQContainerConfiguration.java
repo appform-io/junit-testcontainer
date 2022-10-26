@@ -32,11 +32,12 @@ import lombok.EqualsAndHashCode;
 @EqualsAndHashCode(callSuper = true)
 public class RabbitMQContainerConfiguration extends CommonContainerConfiguration {
     public static final String BEAN_NAME_EMBEDDED_RABBITMQ = "embeddedRabbitMq";
-    private String dockerImage = "rabbitmq:3-alpine";
+    private String dockerImage = "rabbitmq:3.8.34-management";
 
     private String user = "rabbitmq";
     private String password = "rabbitmq";
     private String host = "localhost";
     private String vhost = "/";
     private int port = 5672;
+    private int managementPort = 15672;
 }

@@ -11,9 +11,10 @@ import java.util.concurrent.TimeUnit;
 
 /*
  * Sometimes the test container startup checks fails due to container not up or busy in acquiring IO resources
- * This delay statup check strategy is used to check the state after a {delayInMilliSec} ms delay
+ * This delay startup check strategy is used to check the state after a {delayInMilliSec} ms delay
  * Uses:
- *      myContainer.withStartupCheckStrategy(new IsRunningStartupCheckStrategyWithDelay(5000));
+ *      myContainer.withStartupCheckStrategy(new IsRunningStartupCheckStrategyWithDelay(1000));
+ *      myContainer.withStartupCheckStrategy(new IsRunningStartupCheckStrategyWithDelay()); // uses 5000ms as default delay
  */
 
 

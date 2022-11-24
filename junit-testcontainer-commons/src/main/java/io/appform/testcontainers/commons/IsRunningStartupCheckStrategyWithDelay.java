@@ -37,7 +37,7 @@ public class IsRunningStartupCheckStrategyWithDelay extends IsRunningStartupChec
 
         try {
             // startup with delay.
-            await().pollDelay(5000, TimeUnit.MILLISECONDS).until(() -> true);
+            await().pollDelay(delayInMilliSec, TimeUnit.MILLISECONDS).until(() -> true);
         } catch (Exception e) {
             log.error("Unable to pause thread", e);
         }

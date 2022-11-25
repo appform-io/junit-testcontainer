@@ -3,6 +3,7 @@ package io.appform.testcontainers.rabbitmq.container;
 import io.appform.testcontainers.commons.ContainerUtils;
 import io.appform.testcontainers.rabbitmq.RabbitMQStatusCheck;
 import io.appform.testcontainers.rabbitmq.config.RabbitMQContainerConfiguration;
+import io.appform.testcontainers.commons.IsRunningStartupCheckStrategyWithDelay;
 import lombok.EqualsAndHashCode;
 import lombok.extern.slf4j.Slf4j;
 import org.testcontainers.containers.GenericContainer;
@@ -27,7 +28,8 @@ public class RabbitMQContainer extends GenericContainer<RabbitMQContainer> {
             .withExposedPorts(rabbitMQContainerConfiguration.getPort(), rabbitMQContainerConfiguration.getManagementPort())
             .withLogConsumer(ContainerUtils.containerLogsConsumer(log))
             .waitingFor(new RabbitMQStatusCheck(rabbitMQContainerConfiguration))
-            .withStartupTimeout(rabbitMQContainerConfiguration.getTimeoutDuration());
+            .withStartupTimeout(rabbitMQContainerConfiguration.getTimeoutDuration())
+            .withStartupCheckStrategy(new IsRunningStartupCheckStrategyWithDelay());
         this.rabbitMQContainerConfiguration = rabbitMQContainerConfiguration;
     }
 
